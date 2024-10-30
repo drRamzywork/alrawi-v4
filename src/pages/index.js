@@ -10,13 +10,12 @@ export default function HomePage() {
   const { locale } = useRouter();
   const imagePath = `/assets/imgs/white_logo.png`;
 
-  const stieName = "الراوي";
-  const siteURL = "https://al-rawi.vercel.app";
+  const stieName = "الراوي للإرشاد الافتراضي";
+  const siteURL = "https://alrawi.suwa.com.sa/";
 
   const SiteDescription = `أهلًا وسهلًا..
 أنا الراوي الافتراضي محمد، يسعدني أن أتحدث هنا عن قصور التابعي الجليل عروة بن الزبير، لنتعرف سويًا على أسرارها وتاريخها العريق فهي تعد من أبرز المعالم السياحية في المدينة، ونتيجة للجهود التي بذلتها وتبذلها هيئة التراث لتأهيلها لاستقبال الزوار، فقد أصبح بإمكان محبي التراث والتاريخ زيارتها طوال أيام الأسبوع
 `;
-
 
   return (
     <>
