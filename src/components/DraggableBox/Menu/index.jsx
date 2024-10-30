@@ -52,12 +52,13 @@ const Menu = ({ isMenu, setIsMenu, showElements,
       {isMenu &&
         <motion.div
           initial={{ scale: 1 }}
-          animate={{ scale: [1, 1.1, 1] }} // Scale up to 1.1x and back to 1x
+          animate={{ scale: [0.9, 0.8, 0.9] }} // Scale up to 1.1x and back to 1x
           transition={{
             duration: 1, // Duration of each scale animation
             repeat: Infinity, // Infinite loop
-            repeatDelay: 5, // 5-second pause between animations
+            repeatDelay: 4, // 4-second pause between animations
           }}
+
 
         >
 
@@ -69,7 +70,8 @@ const Menu = ({ isMenu, setIsMenu, showElements,
             </button>
 
           </div >
-        </ motion.div >
+        </motion.div>
+
 
 
       }
