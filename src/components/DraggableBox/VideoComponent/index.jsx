@@ -130,9 +130,7 @@ const VideoComponent = ({ currentVideo, muted
       // if (showElements === true) {
       //   videoRef.current.pause();
       // }
-      if (showNewMenu === true) {
-        videoRef.current.pause();
-      }
+
 
 
       if (showElements === true) {
@@ -142,7 +140,7 @@ const VideoComponent = ({ currentVideo, muted
 
     }
 
-  }, [currentVideo, muted, isClosed, showElements, showNewMenu]);
+  }, [currentVideo, muted, isClosed, showElements,]);
 
 
 

@@ -159,7 +159,7 @@ const Menu = ({ isMenu, setIsMenu, showElements,
             <div className={styles.options}>
               <ul>
 
-                <li onClick={() => { setCurrentVideo('https://toot.one/rawai/ar/3.mp4'); setShowElements(false); setMuted(false); setIsMenu(true) }}>
+                <li onClick={() => { setCurrentVideo('https://suwa.com.sa/v/rawai/3.mp4'); setShowElements(false); setMuted(false); setIsMenu(true) }}>
                   <div className={styles.icon_container}>
                     <img src="/assets/imgs/location.png" alt="" />
 
@@ -175,6 +175,30 @@ const Menu = ({ isMenu, setIsMenu, showElements,
 
                   </div>
                   <button >تاريخ بناء القصر</button>
+
+
+                </li>
+
+                {/* ////////// */}
+
+                <li onClick={() => { setCurrentVideo('https://suwa.com.sa/v/rawai/4.mp4'); setShowElements(false); setMuted(false); setIsMenu(true) }}>
+
+                  <div className={styles.icon_container}>
+                    <img src="/assets/imgs/bulding.png" alt="" />
+
+                  </div>
+                  <button >معالم القصر</button>
+
+
+                </li>
+
+                <li onClick={() => { setCurrentVideo('https://suwa.com.sa/v/rawai/5.mp4'); setShowElements(false); setMuted(false); setIsMenu(true) }}>
+
+                  <div className={styles.icon_container}>
+                    <img src="/assets/imgs/light.png" alt="" />
+
+                  </div>
+                  <button >سبب بناء القصر</button>
 
 
                 </li>
