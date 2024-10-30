@@ -17,7 +17,7 @@ const DraggableBox = () => {
 
   const [showNewMenu, setShowNewMenu] = useState(false);
   // NEW LOGIC
-
+  const [pause, setPause] = useState(false);
   const [isMenu, setIsMenu] = useState(true);
 
 
@@ -26,7 +26,7 @@ const DraggableBox = () => {
 
 
       {showNewMenu !== true && showElements !== true &&
-        <div className={styles.openShowMenu} onClick={() => setShowNewMenu(true)}>
+        <div className={styles.openShowMenu} onClick={() => { setShowNewMenu(true); setPause(true); }}>
           <img src="/assets/imgs/003.png" alt="" />
         </div>
       }
@@ -43,7 +43,8 @@ const DraggableBox = () => {
         showNewMenu={showNewMenu}
         setShowNewMenu={setShowNewMenu}
 
-
+        pause={pause}
+        setPause={setPause}
 
         isMenu={isMenu}
         setIsMenu={setIsMenu}

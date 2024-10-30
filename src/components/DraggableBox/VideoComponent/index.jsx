@@ -92,7 +92,7 @@ import React, { useEffect, useRef } from 'react'
 import styles from './index.module.scss';
 
 const VideoComponent = ({ currentVideo, muted
-  , setMuted, isClosed, setIsClosed, showElements,
+  , setMuted, isClosed, pause, showElements,
   showNewMenu, setShowNewMenu
   , }) => {
   const videoRef = useRef(null);
@@ -127,10 +127,9 @@ const VideoComponent = ({ currentVideo, muted
       //   videoRef.current.pause();
       // }
 
-      // if (showElements === true) {
-      //   videoRef.current.pause();
-      // }
-
+      if (pause === true) {
+        videoRef.current.pause();
+      }
 
 
       if (showElements === true) {
@@ -140,7 +139,7 @@ const VideoComponent = ({ currentVideo, muted
 
     }
 
-  }, [currentVideo, muted, isClosed, showElements,]);
+  }, [currentVideo, muted, isClosed, showElements, pause]);
 
 
 

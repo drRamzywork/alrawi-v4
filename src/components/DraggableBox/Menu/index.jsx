@@ -119,13 +119,13 @@ const Menu = ({ isMenu, setIsMenu, showElements,
             right: 0,
             display: "inline-block",
             backgroundColor: "red",
-            width: "100%",  // Set width to full screen
-            height: "fit-content",  // Dynamically adjust height based on content
+            width: "100%",
+            height: "fit-content",
             border: "1px solid #E0E0E0",
             boxShadow:
               "0px 2px 5px rgba(0, 0, 0, 0.06), 0px 2px 13px rgba(0, 0, 0, 0.12)",
             borderRadius: "13px 13px 0px 0px",
-            // overflow: "hidden",
+
             zIndex: 1000
           }}
           id='menu'
