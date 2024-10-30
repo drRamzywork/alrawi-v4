@@ -58,7 +58,7 @@ const Menu = ({ isMenu, setIsMenu, showElements,
             repeat: Infinity, // Infinite loop
             repeatDelay: 4, // 4-second pause between animations
           }}
-
+          className={styles.btn_contaienr}
 
         >
 

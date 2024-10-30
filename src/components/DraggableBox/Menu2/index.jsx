@@ -35,6 +35,8 @@ const Menu2 = ({ showNewMenu, setShowNewMenu, }) => {
       {showNewMenu && (
         <div className={styles.layer} onClick={() => setShowNewMenu(false)} />
       )}
+
+
       <motion.div
         initial="hidden"
         animate={controls}
