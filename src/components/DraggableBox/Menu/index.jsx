@@ -168,7 +168,7 @@ const Menu = ({ isMenu, setIsMenu, showElements,
 
                 </li>
 
-                <li onClick={() => { setCurrentVideo('https://toot.one/rawai/ar/2.mp4'); setShowElements(false); setMuted(false); setIsMenu(true) }}>
+                <li onClick={() => { setCurrentVideo('https://suwa.com.sa/v/rawai/2.mp4'); setShowElements(false); setMuted(false); setIsMenu(true) }}>
 
                   <div className={styles.icon_container}>
                     <img src="/assets/imgs/calendar.png" alt="" />
