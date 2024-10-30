@@ -50,10 +50,27 @@ const Menu = ({ isMenu, setIsMenu, showElements,
 
 
       {isMenu &&
-        <div className={styles.menu_btn} id='button' onClick={() => handleClickMenuBtn()}>
-          <button >ماذا أروي؟</button>
+        <motion.div
+          initial={{ scale: 1 }}
+          animate={{ scale: [1, 1.1, 1] }} // Scale up to 1.1x and back to 1x
+          transition={{
+            duration: 1, // Duration of each scale animation
+            repeat: Infinity, // Infinite loop
+            repeatDelay: 5, // 5-second pause between animations
+          }}
 
-        </div >
+        >
+
+          <div className={styles.menu_btn} id='button' onClick={() => handleClickMenuBtn()}>
+            <button
+
+            >
+              ماذا أروي؟
+            </button>
+
+          </div >
+        </ motion.div >
+
 
       }
 
@@ -109,8 +126,8 @@ const Menu = ({ isMenu, setIsMenu, showElements,
             visible: { y: 0 },  // Open state
             hidden: { y: "130%" },  // Closed state, pushes it out of the screen
           }}
-          dragConstraints={{ top: 0 }}  // Allows dragging only downward
-          dragElastic={0.05}  // Reduces elasticity for smoother drag
+          dragConstraints={{ top: 0 }}
+          dragElastic={0.05}
           style={{
             paddingBottom: "24px",
             position: "fixed",

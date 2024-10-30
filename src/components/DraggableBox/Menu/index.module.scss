@@ -21,12 +21,13 @@
   justify-content: center;
   max-width: 331px;
   left: 50%;
-  width: 100%;
+  width: 70%;
   transform: translateX(-50%);
   // margin: 0 16px;
   max-height: 52px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  border-radius: 5px;
   &:hover {
     background-color: #596978e1;
   }
@@ -36,6 +37,13 @@
     font-size: 28px;
     background-color: unset;
     padding: 0 0 8px 0;
+  }
+
+  @media screen and (max-width: 450px) {
+    // background-color: red;
+    top: -59px;
+    width: 55%;
+    font-size: 18px;
   }
 }
 
